@@ -2,7 +2,7 @@
   "name": "jest-testing-template",
   "version": "1.0.0",
   "description": "Testing environment template with jest.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
@@ -16,10 +16,14 @@
       "onFail": "download"
     }
   },
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.29.7",
     "babel-jest": "^30.4.1",
     "jest": "^30.4.2"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0"
   }
 }
