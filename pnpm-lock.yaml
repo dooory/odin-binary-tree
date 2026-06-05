@@ -206,10 +206,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@types/jest':
-        specifier: ^30.0.0
-        version: 30.0.0
     devDependencies:
       '@babel/core':
         specifier: ^7.29.7
@@ -217,6 +213,9 @@ importers:
       '@babel/preset-env':
         specifier: ^7.29.7
         version: 7.29.7(@babel/core@7.29.7)
+      '@types/jest':
+        specifier: ^30.0.0
+        version: 30.0.0
       babel-jest:
         specifier: ^30.4.1
         version: 30.4.1(@babel/core@7.29.7)
