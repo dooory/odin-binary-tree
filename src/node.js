@@ -1,32 +1,15 @@
 export function Node(value) {
-  let leftChild;
-  let rightChild;
+  let left;
+  let right;
 
-  function setLeftChild(child) {
-    leftChild = child;
-  }
-
-  function setRightChild(child) {
-    rightChild = child;
-  }
-
-  function getLeftChild(child) {
-    return leftChild;
-  }
-
-  function getRightChild(child) {
-    return rightChild;
-  }
-
-  function getValue() {
-    return value;
+  function isLeaf() {
+    return !left || !right;
   }
 
   return {
-    setLeftChild,
-    setRightChild,
-    getLeftChild,
-    getRightChild,
-    getValue,
+    left,
+    right,
+    value,
+    isLeaf,
   };
 }
